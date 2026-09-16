@@ -1,8 +1,6 @@
-# Journal
+### THE Journal
 
-## Entry 1
-
-- Date: 2026-09-16
+# Entry 1: 2026-09-16
 - Project: CART253
 - Notes:
   - Started working on the visual project and reference image.
