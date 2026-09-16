@@ -3,7 +3,7 @@ This website's purpose is simple and linked to the projects of CART253. First, i
 
 [Open journal](journal.md)
 
-[Somewhere Beyond banner](images/images\Portenoiretblanc1.jpg) 
+[Somewhere Beyond banner](images/Portenoiretblanc1.jpg) 
 
 
 
