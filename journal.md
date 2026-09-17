@@ -1,8 +1,3 @@
 # THE Journal
 ### Entry 1: 2026-09-16
-- Project: protype of website
-
-  - Started working on the visual project and reference image.
-  - Added the original image as a banner in the README.
-  - Ready to continue iterating on the sketch and design.
-
+Today I have worked on two projects. The first was the creation of this website and the organisation of its subsections. I found it relatively easy with the coding assistant vscode has to offer, although I did struggle to link the banner for the readme and to create links from the readme to the journal and prototypes tab. Overall, I do think the resulting website is functional. The second project I worked on was the challenge to make a landscape. This challenge was pretty stimulating, it's all new stuff to me, and I found it overly annoying to make the simplest of shapes. I think that the more you know, the more you can automate the process to create cool stuff efficiently. For example, I did a gradient between multiple shapes manually and there is for sure a way to do it faster. I love the artwork I made, so for me it's a win. My brain hurts.
