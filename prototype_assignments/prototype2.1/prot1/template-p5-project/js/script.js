@@ -21,9 +21,14 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    fill(0, 255, 0);
+    circle(250, 250, 500)
+
+    fill(0, 0, 255);
+    circle(250, 250, 300)
 
     fill(255, 0, 0);
-    circle(250, 250, 100)
+    circle(250, 250, 200)
 
     fill(69, 100, 10);
     rect(50, 200, 100, 200);
