@@ -1,16 +1,16 @@
 /**
- * Title of Project
- * Author Name
+ * As concrete as abstract gets
+ * harles Tremblay-Gobeil
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Try to create a piece of art as abstract and random as possible,
+ * while using rectangles to create contrast between shape and form.
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+ *canvas creation and canvas color
+ */
 function setup() {
     createCanvas(500, 500);
     background(20, 70, 255);
@@ -18,7 +18,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ *background circles
 */
 function draw() {
     fill(0, 255, 0);
@@ -29,6 +29,8 @@ function draw() {
 
     fill(255, 0, 0);
     circle(250, 250, 200)
+
+    //Main component: rectangles of various colors and sizes
 
     fill(69, 100, 10);
     rect(50, 200, 100, 200);

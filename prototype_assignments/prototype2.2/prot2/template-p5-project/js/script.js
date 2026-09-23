@@ -1,15 +1,14 @@
 /**
- * Title of Project
- * Author Name
+ * (Very) evil face
+ * Charles Tremblay-Gobeil
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is a very, very evil face created as simply as possible. Don't stare too long at it's eyes.
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * canvas creation and black background
 */
 function setup() {
 
@@ -19,12 +18,12 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws face
 */
 function draw() {
     fill(245, 190, 200)
     ellipse(250, 250, 250, 400)
-
+    //Draws eyes and pupils
     fill(255, 255, 255)
     circle(320, 220, 40)
     circle(180, 220, 40)
@@ -38,7 +37,7 @@ function draw() {
     noFill()
     line(130, 140, 220, 190)
     line(280, 190, 370, 140)
-
+    //Draws mouth
     fill(255, 110, 130)
     arc(250, 300, 140, 90, 0, PI)
 

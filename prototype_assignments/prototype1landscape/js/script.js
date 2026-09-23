@@ -1,16 +1,15 @@
 /**
- * Title of Project
- * Author Name
+ * Landscape
+ * Charles Tremblay-Gobeil
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Landscape composed of a series of ellipses representing the sky and ground, as well as a sun
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+ //Canvas creation and canvas color
+ */
 function setup() {
     createCanvas(500, 500);
     background(250, 210, 250);
@@ -21,7 +20,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Sun
 */
 function draw() {
     fill(255, 255, 255);
@@ -29,7 +28,7 @@ function draw() {
 
     fill(0, 0, 0);
     ellipse(350, 140, 150, 150);
-
+    //Draw ground
 
     fill(0, 60, 50);
     ellipse(400, 500, 500, 250);
@@ -59,6 +58,7 @@ function draw() {
     ellipse(-150, 500, 500, 250);
     fill(0, 0, 50);
     ellipse(-200, 500, 500, 250);
+    // Draw sky
 
     fill(255, 69, 0);
     ellipse(150, 0, 500, 250);

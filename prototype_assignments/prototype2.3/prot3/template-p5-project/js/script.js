@@ -1,15 +1,14 @@
 /**
- * Title of Project
- * Author Name
+ * Shiny balls
+ * Charles Tremblay-Gobeil
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ *Artwork based on a geometric pattern of colorful balls with a shiny effect, as well as a mosaic background.
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Canvas creation and black background
 */
 function setup() {
     createCanvas(500, 500);
@@ -18,11 +17,11 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws dark background
 */
 function draw() {
     background(20, 10, 18);
-
+    //Creates mosaic background with diamonds of two different colors
     noStroke();
     let diamondSize = 22;
     for (let x = -diamondSize; x < width + diamondSize; x += diamondSize) {
@@ -38,7 +37,7 @@ function draw() {
             endShape(CLOSE);
         }
     }
-
+    //Draws grid of balls with color gradient
     let cols = 4;
     let rows = 4;
     let cellSize = width / cols;
@@ -60,7 +59,7 @@ function draw() {
             stroke(180, 180, 180);
             strokeWeight(1);
             circle(x, y, radius * 2);
-
+            //Adds shading effect to balls using radial gradient
             const shade = drawingContext.createRadialGradient(
                 x - radius * 0.55,
                 y + radius * 0.35,
@@ -77,7 +76,7 @@ function draw() {
             drawingContext.beginPath();
             drawingContext.arc(x, y, radius, 0, TWO_PI);
             drawingContext.fill();
-
+            //Adds shiny effect to balls using a small white circle
             fill(255, 255, 255);
             circle(x + radius * 0.35, y - radius * 0.35, radius * 0.25);
         }
