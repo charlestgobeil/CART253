@@ -3,7 +3,7 @@ This website's purpose is simple and linked to the projects of CART253. First, i
 
 [Prototype assignments](./prototype_assignments)
 
-[Challenges](./pr)
+[Challenges](./challenges)
 
 [Open journal](./journal.md)
 
