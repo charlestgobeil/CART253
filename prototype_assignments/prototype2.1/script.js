@@ -1,6 +1,6 @@
 /**
  * As concrete as abstract gets
- * harles Tremblay-Gobeil
+ * Charles Tremblay-Gobeil
  * 
  * Try to create a piece of art as abstract and random as possible,
  * while using rectangles to create contrast between shape and form.

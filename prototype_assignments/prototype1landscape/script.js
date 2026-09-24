@@ -1,15 +1,14 @@
 /**
- * Title of Project
- * Author Name
+ * Landscape Prototype
+ * Charles Tremblay-Gobeil
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A landscpae composed of ellipses forming a ground and sky, both with gradients. The red sun is shining over.
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Create canvas and add background color
 */
 function setup() {
     createCanvas(500, 500);
@@ -21,8 +20,8 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+ * Draw the sun
+ */
 function draw() {
     fill(255, 255, 255);
     ellipse(350, 140, 160, 160);
@@ -30,7 +29,7 @@ function draw() {
     fill(0, 0, 0);
     ellipse(350, 140, 150, 150);
 
-
+    //Draws the ground
     fill(0, 60, 50);
     ellipse(400, 500, 500, 250);
     fill(0, 50, 50);
@@ -59,7 +58,7 @@ function draw() {
     ellipse(-150, 500, 500, 250);
     fill(0, 0, 50);
     ellipse(-200, 500, 500, 250);
-
+    //Draws the sky
     fill(255, 69, 0);
     ellipse(150, 0, 500, 250);
     fill(255, 100, 0);
