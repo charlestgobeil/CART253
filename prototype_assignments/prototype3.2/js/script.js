@@ -1,8 +1,9 @@
 /**
- * Square circle
- * Charles Tremblay-Gobeil
+ * Title of Project
+ * Author Name
  * 
- * A circle that moves to trace a square pattern.
+ * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
+ * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
  */
 
 "use strict";
@@ -13,8 +14,8 @@ let circle1 = {
 };
 
 /**
- * Sets up the canvas and initial background.
- */
+ * OH LOOK I DIDN'T DESCRIBE SETUP!!
+*/
 function setup() {
     createCanvas(500, 500);
     background(255, 255, 255);
