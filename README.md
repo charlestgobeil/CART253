@@ -13,7 +13,15 @@ This website's purpose is simple and linked to the projects of CART253. First, i
 
 [Prototype 2.3: Shiny balls](./prototype_assignments/prototype2.3/index.html)
 
+[Prototype 3.1: Perpetual change](./prototype_assignments/prototype3.1/index.html)
+
+[Prototype 3.2: Square circle](./prototype_assignments/prototype3.2/index.html)
+
+[Prototype 3.3: Rings](./prototype_assignments/prototype3.3/index.html)
+
 [Challenge 1: The angriest of them all](./challenges/variables_challenge)
+
+[Challenge 2: Go Habs Go](./challenges/conditionals_challenge)
 
 
 
