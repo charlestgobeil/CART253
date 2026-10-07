@@ -26,6 +26,11 @@ let mouseTriggerball = {
 function setup() {
     createCanvas(500, 500);
     backgground(0, 0, 0);
+
+    //everything in setup is independant and only runs once. 
+    setInterval(moveBall, 1000 / 60);
+    setInterval(changeBallColor, 2000);
+    //Here, 2000= 2 seconds. The ball will change color every 2 seconds.
 }
 
 
