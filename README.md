@@ -1,7 +1,7 @@
 #### Somewhere Beyond
 This website's purpose is simple and linked to the projects of CART253. First, it is the tool in which these projects will be made, and secondly, it is the storage and display for these projects. Overall, it is a creative library.
 
-[Open journal](./journal.md)
+[THE Journal](./journal.md)
 
 [Somewhere Beyond banner](./images/Portenoiretblanc1.jpg) 
 
@@ -19,11 +19,17 @@ This website's purpose is simple and linked to the projects of CART253. First, i
 
 [Prototype 3.3: Rings](./prototype_assignments/prototype3.3/index.html)
 
+[Prototype 4.1: Circus](./prototype_assignments/prototype4.1/index.html)
+
+[Prototype 4.2: Heat it up](./prototype_assignments/prototype4.2/index.html)
+
+[Prototype 4.3: RUN](./prototype_assignments/prototype4.3/index.html)
+
 [Challenge 1: The angriest of them all](./challenges/variables_challenge)
 
 [Challenge 2: Go Habs Go](./challenges/conditionals_challenge)
 
-
+[Challenge 2: The Only Move Is Not To Play](./challenges/events_challenge)
 
 
 

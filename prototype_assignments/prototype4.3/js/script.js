@@ -115,4 +115,16 @@ function draw() {
         enemy.speed = 0;
     }
 
+    displayUI();
 }
+//display text
+function displayUI() {
+    push();
+    fill(0);
+    textSize(30);
+    textStyle(BOLD);
+    textAlign(CENTER, CENTER);
+    text("RUN!!! (press mouse)", width / 2, height / 3);
+    pop();
+}
+
