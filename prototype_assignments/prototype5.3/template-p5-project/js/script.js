@@ -1,18 +1,17 @@
 /**
- * Title of Project
- * Author Name
+ * Paint it all
+ * Charles Tremblay-Gobeil
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * A minigame where you have to brush the entire canvas black. Once it is complete, you won!
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ // Make background white
 */
 function setup() {
-
+    createCanvas(500, 500)
 }
 
 
@@ -20,5 +19,6 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background(255, 255, 255);
 
 }
