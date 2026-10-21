@@ -39,7 +39,7 @@ function draw() {
     console.log(gameOver);
 
     //make timer decrease by 1 every second. If timer reaches 0, gameOver=true
-    if (!gameOver) {
+    if (!gameOver && !gameWon) {
         //make time decrease by 1 every second
         timer -= 0.013;
 
@@ -59,8 +59,14 @@ function draw() {
         fill(0, 255, 0);
         textSize(48);
         textAlign(CENTER, CENTER);
-        text("You win!", width / 2, height / 3);
+        text("You win!", width / 2, height / 3 + 100);
 
     }
-
+}
+//Make it so every time space bar is pressed, score increases by 1
+function keyPressed() {
+    if (keyCode === 32 && !gameOver && !gameWon) {
+        score += 1;
+        return false;
+    }
 }
