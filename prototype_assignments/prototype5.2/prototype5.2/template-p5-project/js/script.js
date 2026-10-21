@@ -31,28 +31,36 @@ function draw() {
     text("Press SPACE as fast as you can!", width / 2, height / 3 - 40);
     fill("#000000");
     textSize(24);
-    text("Time remaining: " + timer, width / 2, height / 3);
+    text("Time remaining: " + ceil(timer), width / 2, height / 3);
     text("Score: " + score, width / 2, height / 3 + 40);
-}
-//make timer decrease by 1 every second. If timer reaches 0, gameOver=true
-if (!gameOver) {
-    //make time decrease by 1 every second
-    score -= 0.05;
-}
-//If timer reacher 0, gameOver=true. Display game over message
-if (timer <= 0) {
-    gameOver = true;
-    fill(255, 0, 0);
-    textSize(48);
-    textAlign(CENTER, CENTER);
-    text("Game over, gotta be quicker than that buddy!", width / 2, height / 3);
-}
-//If score=10, display win message and stop timer from decreasing
-if (score >= 10) {
-    gameWon = true;
-    fill(0, 255, 0);
-    textSize(48);
-    textAlign(CENTER, CENTER);
-    text("You win!", width / 2, height / 3);
-    noLoop();
+
+
+
+    console.log(gameOver);
+
+    //make timer decrease by 1 every second. If timer reaches 0, gameOver=true
+    if (!gameOver) {
+        //make time decrease by 1 every second
+        timer -= 0.013;
+
+        console.log(timer);
+    }
+    //If timer reaches 0, gameOver=true. Display game over message
+    if (timer <= 0) {
+        gameOver = true;
+        fill(255, 0, 0);
+        textSize(24);
+        textAlign(CENTER, CENTER);
+        text("Game over, gotta be quicker than that buddy!", width / 2, height / 7);
+    }
+    //If score=10, display win message and stop timer from decreasing
+    if (score >= 10) {
+        gameWon = true;
+        fill(0, 255, 0);
+        textSize(48);
+        textAlign(CENTER, CENTER);
+        text("You win!", width / 2, height / 3);
+
+    }
+
 }

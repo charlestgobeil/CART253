@@ -7,24 +7,46 @@
  */
 
 "use strict";
-
+let circleX = 250;
+let circleY = 250;
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+    createCanvas(500, 500);
+    background('skyblue');
+    let newVal = squareNum(2);
+    let newVal_2 = squareNum(5);
+    console.log(newVal);
+    console.log(newVal_2);
 
+}
+function squareNum(num) {
+    let squaredNumValue = num * num
+
+    return d;
 }
 
 
+function calculateDistance(objX, objY) {
+    let d = dist(mouseX, mouseY, objX, objY)
+    let mappedX = map()
+
+    return d;
+}
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background('skyblue');
+
     complexCircles();
     complexCircles_2();
     complexCircles_3();
-    complexCircles_P(width / 2, height / 2);
+    complexCircles_P(circleX, circleY, 80, 80);
+    complexCircles_O(width / 2 - 100, height / 2, 80, 80);
+
+    let d = calculateDistance(circleX, circleY);
+    console.log(d);
 }
 
 function complexCircles() {
