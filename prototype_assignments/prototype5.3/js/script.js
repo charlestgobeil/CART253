@@ -16,11 +16,8 @@ function setup() {
     background(255, 255, 255);
 
 }
-
-
 /**
  //Make the mouse a brush, display instructions and create win message function
-
 */
 function draw() {
     noStroke();

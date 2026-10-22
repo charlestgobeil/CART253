@@ -1,8 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Quick!
+ * Charles Tremblay-Gobeil
  * 
- * A minigame where you have to press the spacebar 10 times before the timer runs out. If you don't, game over!
+ * A minigame where you have to press the spacebar 20 times before the timer runs out. If you don't, game over!
  */
 
 "use strict";
@@ -11,7 +11,7 @@ let score = 0;
 let gameOver = false;
 let gameWon = false;
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+//Make canvas
 */
 function setup() {
     createCanvas(500, 500);
@@ -20,11 +20,11 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+make white background
 */
 function draw() {
     background(255, 255, 255);
-    //display timer and score
+    //display instructions, as well as timer and score
     fill("#dc0909");
     textAlign(CENTER, CENTER);
     textSize(28);

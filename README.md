@@ -25,11 +25,21 @@ This website's purpose is simple and linked to the projects of CART253. First, i
 
 [Prototype 4.3: RUN](./prototype_assignments/prototype4.3/index.html)
 
+[Prototype 5.1: A coin in the dark](./prototype_assignments/prototype5.1/index.html)
+
+[Prototype 5.2: Quick!](./prototype_assignments/prototype5.2/index.html)
+
+[Prototype 5.3: Paint it all](./prototype_assignments/prototype5.3/index.html)
+
 [Challenge 1: The angriest of them all](./challenges/variables_challenge)
 
 [Challenge 2: Go Habs Go](./challenges/conditionals_challenge)
 
-[Challenge 2: The Only Move Is Not To Play](./challenges/events_challenge)
+[Challenge 3: The Only Move Is Not To Play](./challenges/events_challenge)
+
+[Challenge 4: Bouncy Ball Ball Bonanza](./challenges/functions_challenge)
+
+
 
 
 

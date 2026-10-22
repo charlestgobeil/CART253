@@ -3,7 +3,7 @@
  * Charles Tremblay-Gobeil
  * 
  * A minigame where with the arrow keys, you must try every direction until you find the coin. You are in the dark. Good luck!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+
  */
 
 "use strict";
@@ -30,13 +30,13 @@ function draw() {
     background(0);
     DisplayUI();
     DisplayWrong();
-
+    //Make coin appear when player is in the right direction
     if (!wrongDirection && player.y > 250) {
         fill("#ffcf0e");
         noStroke();
         ellipse(coin.x, coin.y, coin.r * 2, coin.r * 2);
     }
-
+    //Draw player
     noStroke();
     fill(255, 0, 0);
     ellipse(player.x, player.y, player.w, player.h);
