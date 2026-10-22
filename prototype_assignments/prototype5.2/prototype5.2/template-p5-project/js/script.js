@@ -53,8 +53,8 @@ function draw() {
         textAlign(CENTER, CENTER);
         text("Game over, gotta be quicker than that buddy!", width / 2, height / 7);
     }
-    //If score=10, display win message and stop timer from decreasing
-    if (score >= 10) {
+    //If score=20, display win message and stop timer from decreasing
+    if (score >= 20) {
         gameWon = true;
         fill(0, 255, 0);
         textSize(48);
