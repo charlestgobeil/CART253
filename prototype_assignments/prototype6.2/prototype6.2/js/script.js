@@ -1,11 +1,14 @@
-/**
+/**The circle, the rectangle and the triangle
  * 
- * Author Name
+ * Charles Tremblay-Gobeil
  * 
- * Generate 
+ * Generate a circle, a rectangle and a triangle. All have random size, position, color,
+ *  outline thickness and outline color. When space is pressed, a new set of shapes appear.
  */
 
 "use strict";
+
+//Call functions
 let fillcolor;
 let strokethickness;
 let strokecolor;
@@ -13,10 +16,20 @@ let circlevariables;
 let rectanglevariables;
 let trianglevariables;
 
-// White canvas
+// Setup
 function setup() {
+
+    //White canvas
     createCanvas(500, 500);
     background(255);
+
+    generateShapeProperties();
+    noLoop();
+}
+
+// Name the variables for the circle, rectangle and triangle drawing functions.
+// Their color, thickness, outline color and positions variables are random.
+function generateShapeProperties() {
 
     fillcolor = color(random(255), random(255), random(255));
     strokethickness = random(1, 10);
@@ -44,9 +57,21 @@ function setup() {
         y3: random(0, 500)
     };
 }
-
-// Define functions for circles, rectangles, and triangles
+//Draw the shapes according to the variables above and add instructions
 function draw() {
+    drawShapes();
+    drawInstructions();
+}
+
+function drawInstructions() {
+    fill("#070707");
+    noStroke();
+    textAlign(CENTER, CENTER);
+    textSize(28);
+    text("Press space to see the magic", width / 2, height / 3 - 40);
+}
+
+function drawShapes() {
     drawCircle(
         circlevariables.x,
         circlevariables.y,
@@ -77,8 +102,15 @@ function draw() {
         strokecolor,
         strokethickness
     );
-
-    noLoop();
+}
+//Make it so background is reset and shapepropreties are reset when space is pressed
+function keyPressed() {
+    if (keyCode === 32) {
+        generateShapeProperties();
+        background(255);
+        redraw();
+        return false;
+    }
 }
 
 // Draw a circle
