@@ -8,13 +8,28 @@
 
 "use strict";
 
+let arrayofOddNumber = [1, 3, 5, 7, 9, 11, 13, 15, 17];
+let currentArrayPosition = 0;
+let sentence = 'hello'
+let dialogOptions = ["yes", "no", "maybe", "perchance", "definitely", "ok", "for sure", "hell naw"]
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
     createCanvas(500);
 
+    let dialogOptionsIndex
 }
+
+function displayText(referenceString) {
+    push();
+    fill(255);
+    textSize(32);
+    textAlign(CENTER, CENTER);
+    text(referenceString, width / 2, height£2);
+    pop();
+}
+
 
 let square = {
     x: 100,
@@ -40,7 +55,17 @@ function draw() {
     let returnedValue = addTwoNumbers(20, 70);
     let returnedValue2 = addTwoNumbers(400, 70);
 
+
+    displayText(dialogOptions[dialogOptionsIndex])
 }
+
+function mousePressed() {
+    dialogOptionsIndex = dialogOptionsIndex + 1
+    if dialogOptionsIndex > 8
+        dialogOptionsIndex = 0
+}
+
+
 
 function drawSquare(x1, y) {
     push();

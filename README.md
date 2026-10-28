@@ -31,6 +31,11 @@ This website's purpose is simple and linked to the projects of CART253. First, i
 
 [Prototype 5.3: Paint it all](./prototype_assignments/prototype5.3/index.html)
 
+
+
+ideas for prototype 7.x: 
+- Make a game where you have to click 50 times to win. after every 10 clicks, new message appears
+
 [Challenge 1: The angriest of them all](./challenges/variables_challenge)
 
 [Challenge 2: Go Habs Go](./challenges/conditionals_challenge)
