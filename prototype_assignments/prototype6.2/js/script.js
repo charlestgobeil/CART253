@@ -16,7 +16,7 @@ let circlevariables;
 let rectanglevariables;
 let trianglevariables;
 
-// Setup
+// Setup, white canvas
 function setup() {
 
     //White canvas

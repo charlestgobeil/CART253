@@ -1,6 +1,6 @@
 /**
  * Title: THE EYE
- * Author: Your Name
+ * Author: Charles Tremblay-Gobeil
  *
  * Description:An eye with a pupil of constantly changing colors. 
  */
