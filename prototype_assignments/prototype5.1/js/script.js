@@ -61,7 +61,7 @@ function DisplayWrong() {
         textSize(16);
         textStyle(BOLD);
         textAlign(CENTER, TOP);
-        text("Wrong direction! Press space to try again.", width / 2, 88);
+        text("Wrong direction! Press space to try again.", width / 2, 188);
         pop();
     }
 }
