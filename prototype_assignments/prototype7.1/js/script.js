@@ -54,7 +54,7 @@ function draw() {
 //This makes the horse run. Make sure the images loop
 function keyPressed() {
     if (keyCode === 32) {
-        currentImageIndex = (currentImageIndex + 1)
+        currentImageIndex = (currentImageIndex + 1) % images.length;
     }
     //Loop
     if (currentImageIndex >= images.length) {

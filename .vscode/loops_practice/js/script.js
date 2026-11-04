@@ -7,12 +7,12 @@
  */
 
 "use strict";
-
+let clownImage = undefined;
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-function setup() {
-
+async function setup() {
+    clownImage = await loadImage("./images/clown.jpg");
 }
 
 
