@@ -19,7 +19,7 @@ const numberNames = {
     "9": "NINE",
 }
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Canvas is created and instructions are displayed
 */
 function setup() {
     createCanvas(500, 500);
@@ -27,9 +27,21 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * draws a new background every frame
+ * draws the number that the user presses on the keyboard
+ * 
 */
 function draw() {
     background('white');
+
+    //instructions
+    push();
+    fill(0);
+    textSize(16);
+    textStyle(BOLD);
+    textAlign(CENTER, TOP);
+    text("Press number keys", 15, 18, width - 30, 50);
+    pop();
+
 
 }

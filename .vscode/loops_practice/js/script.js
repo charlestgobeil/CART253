@@ -8,6 +8,14 @@
 
 "use strict";
 let clownImage = undefined;
+//let xPos = 0;
+
+
+let x = 20;
+let y = 250;
+let imageWidth = 40;
+
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -20,5 +28,13 @@ async function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background('skyblue');
 
+    //xPos++;
+    while (x < width) {
+        image(clownImage, x, y, imageWidth, imageWidth);
+        x = x + imageWidth;
+    }
+
+    noLoop();
 }

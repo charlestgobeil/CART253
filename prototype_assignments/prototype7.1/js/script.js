@@ -7,20 +7,20 @@
 
 "use strict";
 //name array for images
-let images = [];
+let horsies = undefined;
 
 //set first image
 let currentImageIndex = 0;
 
 //create separate array for images
 function preload() {
-    images = [
-        loadImage("./images/C1.jpg"),
-        loadImage("./images/C2.jpg"),
-        loadImage("./images/C3.jpg"),
-        loadImage("./images/C4.jpg"),
-        loadImage("./images/C5.jpg"),
-        loadImage("./images/C6.jpg")
+    horsies = [
+        loadImage("../../images/C1.png"),
+        loadImage("../../images/C2.png"),
+        loadImage("../../images/C3.png"),
+        loadImage("../../images/C4.png"),
+        loadImage("../../images/C5.png"),
+        loadImage("../../images/C6.png")
     ];
 }
 /**
@@ -38,10 +38,10 @@ function draw() {
     background('skyblue');
 
     //display images, starting with the first image in the array
-    image(images[currentImageIndex], 0, 0, width, height);
+    image(horsies[currentImageIndex], 0, 0, width, height);
 
     //instructions
-    fill("#070707");
+    fill("#ff0000");
     noStroke();
     textAlign(CENTER, CENTER);
     textSize(28);
@@ -54,10 +54,10 @@ function draw() {
 //This makes the horse run. Make sure the images loop
 function keyPressed() {
     if (keyCode === 32) {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
+        currentImageIndex = (currentImageIndex + 1) % horsies.length;
     }
     //Loop
-    if (currentImageIndex >= images.length) {
+    if (currentImageIndex >= horsies.length) {
         currentImageIndex = 0;
     }
 }
