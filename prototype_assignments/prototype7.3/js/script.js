@@ -6,6 +6,8 @@
  */
 
 "use strict";
+
+let font = undefined;
 const numberNames = {
     "0": "ZERO",
     "1": "ONE",
@@ -18,11 +20,15 @@ const numberNames = {
     "8": "EIGHT",
     "9": "NINE",
 }
+//preload font
+
 /**
  * Canvas is created and instructions are displayed
 */
-function setup() {
+async function setup() {
     createCanvas(500, 500);
+    font = await loadFont("assets/font/maisty.regular.ttf");
+
 }
 
 
@@ -43,5 +49,14 @@ function draw() {
     text("Press number keys", 15, 18, width - 30, 50);
     pop();
 
-
+    //draw the number that the user presses
+    if (key in numberNames) {
+        push();
+        fill("#ff0000");
+        textFont(font);
+        textSize(100);
+        textAlign(CENTER, CENTER);
+        text(numberNames[key], width / 2, height / 2);
+        pop();
+    }
 }
