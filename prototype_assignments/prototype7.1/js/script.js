@@ -1,12 +1,13 @@
 /**
- * Run horsy run
+ * Horse running stop motion
  * Charles Tremblay-Gobeil
  * 
- * Animation of a horse running
+ * Animation of a horse running. When the user presses spacebar, images
+ * are cycled into a full horse running animation. The images loop.
  */
 
 "use strict";
-//name array for images
+//set variable for images and setup their loading
 let horsies = undefined;
 
 //set first image

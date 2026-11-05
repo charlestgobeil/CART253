@@ -37,8 +37,11 @@ This website's purpose is simple and linked to the projects of CART253. First, i
 
 [Prototype 6.3: Lines of doom](./prototype_assignments/prototype6.3/index.html)
 
-ideas for prototype 7.x: 
-- Make a game where you have to click 50 times to win. after every 10 clicks, new message appears
+[Prototype 7.1: Horse running stop motion](./prototype_assignments/prototype7.1/index.html)
+
+[Prototype 7.2: Move move move](./prototype_assignments/prototype7.2/index.html)
+
+[Prototype 7.3: Numbers](./prototype_assignments/prototype7.3/index.html)
 
 [Challenge 1: The angriest of them all](./challenges/variables_challenge)
 
@@ -47,6 +50,8 @@ ideas for prototype 7.x:
 [Challenge 3: The Only Move Is Not To Play](./challenges/events_challenge)
 
 [Challenge 4: Bouncy Ball Ball Bonanza](./challenges/functions_challenge)
+
+[Challenge 5: Lines (Loops challenge)](./challenges/loops_challenge)
 
 
 

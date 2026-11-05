@@ -6,12 +6,6 @@
  */
 
 "use strict";
-let x1 = 50;
-let y1 = 0;
-let x2 = 50;
-let y2 = lenght;
-
-let strokeValue = 0;
 
 /**
  * Creates the canvas
@@ -25,7 +19,15 @@ function setup() {
  * gradually lightening colour
  */
 function draw() {
-    background("pink");
+
+    //add a gradient made out of lines to the background
+    let c1 = color(255, 0, 0);
+    let c2 = color(0, 0, 255);
+    for (let x = 0; x < width; x += 0.5) {
+        stroke(lerpColor(c1, c2, x / width));
+        line(x, 0, x, height);
+    }
+
 
 
     //use a while loop to draw lines across the canvas with increasing thickness and gradually lightening colour
@@ -37,4 +39,16 @@ function draw() {
         x += 50;
         strokeValue += 25;
     }
+
+    //do the same thing with horizontal lines
+    let y = 0;
+    let strokeValue2 = 0;
+    while (y < height) {
+        stroke(strokeValue2);
+        line(0, y, width, y);
+        y += 50;
+        strokeValue2 += 25;
+    }
+
+
 }

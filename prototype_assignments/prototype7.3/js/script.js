@@ -1,13 +1,16 @@
 /**
- * Title of Project
- * Author Name
+ * Numbers
+ * Charles Tremblay-Gobeil
  * 
  * A project where the user can press any number key from 0-9 and it makes the number appear
  */
 
 "use strict";
 
+//setup the loading of font
 let font = undefined;
+
+//create an array for the text for every number key
 const numberNames = {
     "0": "ZERO",
     "1": "ONE",
@@ -20,20 +23,18 @@ const numberNames = {
     "8": "EIGHT",
     "9": "NINE",
 }
-//preload font
+
 
 /**
- * Canvas is created and instructions are displayed
+ * Canvas is created and preload font 
 */
 async function setup() {
     createCanvas(500, 500);
     font = await loadFont("assets/font/maisty.regular.ttf");
-
 }
-
-
 /**
  * draws a new background every frame
+ * draws instructions
  * draws the number that the user presses on the keyboard
  * 
 */

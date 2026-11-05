@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * Move move move
+ * Charles Tremblay-Gobeil
  * 
  * A minigame where you can go right, left, up or down with the arrows. 
  * Only one direction is right, if you go the wrong way you die and try again with spacebar.
@@ -19,12 +19,13 @@ let player = {
     fill: "red"
 };
 
+//set scenarios as false, intially
 let wrongDirection = false;
 let rightDirection = false;
 
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * create Canvas
 */
 function setup() {
     createCanvas(500, 500);
@@ -32,7 +33,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * draw player, background and name functions for text.
 */
 function draw() {
 
