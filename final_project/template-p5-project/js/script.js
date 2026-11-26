@@ -13,21 +13,79 @@ I also want the user to be able to cycle through multiple brushes when they pres
 "use strict";
 
 let brush1 = {
-    size:14,
-    fillColor: "#f51212"
+    size: 30,
+    fillColor: "#fff700"
 };
 let brush2 = {
-    size:14,
-    fillColor: "#12f512"
+    size: 25,
+    fillColor: "#ffae00"
 };
 let brush3 = {
-    size:14,
-    fillColor: "#1212f5"
+    size: 20,
+    fillColor: "#ff7300"
 };
-let arrayofbrushs = [brush1, brush2, brush3];
+let brush4 = {
+    size: 15,
+    fillColor: "#ff4800"
+};
+let brush5 = {
+    size: 10,
+    fillColor: "#ff0000"
+};
+
+
+let brush6 = {
+    size: 30,
+    fillColor: "#00ff22"
+};
+let brush7 = {
+    size: 25,
+    fillColor: "#00ff6e"
+};
+let brush8 = {
+    size: 20,
+    fillColor: "#00ffbf"
+};
+let brush9 = {
+    size: 15,
+    fillColor: "#00ddff"
+};
+let brush10 = {
+    size: 10,
+    fillColor: "#009dff"
+};
+
+
+let brush11 = {
+    size: 30,
+    fillColor: "#2f00ff"
+};
+let brush12 = {
+    size: 25,
+    fillColor: "#4c00ff"
+};
+let brush13 = {
+    size: 20,
+    fillColor: "#8800ff"
+};
+let brush14 = {
+    size: 15,
+    fillColor: "#c800ff"
+};
+let brush15 = {
+    size: 10,
+    fillColor: "#ff00d9"
+};
+let arrayofbrushsA = [brush1, brush2, brush3, brush4, brush5];
+let arrayofbrushsB = [brush6, brush7, brush8, brush9, brush10];
+let arrayofbrushsC = [brush11, brush12, brush13, brush14, brush15];
+
+let currentBrushArray = arrayofbrushsA;
 let currentBrush = 0;
-let outlineLayer;
-let colorLayer;
+let outlineLayers = [];
+let colorLayers = [];
+let currentOutlineLayer;
+let currentColorLayer;
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -35,8 +93,15 @@ function setup() {
 
     createCanvas(500, 500);
     background(255, 255, 255);
-    outlineLayer = createGraphics(width, height);
-    colorLayer = createGraphics(width, height);
+    createOutlineLayer();
+}
+blendMode(ADD);
+
+function createOutlineLayer() {
+    currentOutlineLayer = createGraphics(width, height);
+    currentColorLayer = createGraphics(width, height);
+    outlineLayers.push(currentOutlineLayer);
+    colorLayers.push(currentColorLayer);
 }
 
 
@@ -44,9 +109,11 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(255);
-    image(outlineLayer, 0, 0);
-    image(colorLayer, 0, 0);
+    background("#ffffff");
+    for (let i = 0; i < outlineLayers.length; i++) {
+        image(outlineLayers[i], 0, 0);
+        image(colorLayers[i], 0, 0);
+    }
 }
 
 function mousePressed() {
@@ -58,19 +125,19 @@ function mouseDragged() {
 }
 
 function drawBrushSegment(x1, y1, x2, y2) {
-    let brush = arrayofbrushs[currentBrush];
+    let brush = currentBrushArray[currentBrush];
 
-    outlineLayer.strokeCap(ROUND);
-    outlineLayer.strokeJoin(ROUND);
-    outlineLayer.stroke("black");
-    outlineLayer.strokeWeight(brush.size + 12);
-    drawSymmetricLines(outlineLayer, x1, y1, x2, y2);
+    currentOutlineLayer.strokeCap(ROUND);
+    currentOutlineLayer.strokeJoin(ROUND);
+    currentOutlineLayer.stroke("black");
+    currentOutlineLayer.strokeWeight(brush.size + 12);
+    drawSymmetricLines(currentOutlineLayer, x1, y1, x2, y2);
 
-    colorLayer.strokeCap(ROUND);
-    colorLayer.strokeJoin(ROUND);
-    colorLayer.stroke(brush.fillColor);
-    colorLayer.strokeWeight(brush.size);
-    drawSymmetricLines(colorLayer, x1, y1, x2, y2);
+    currentColorLayer.strokeCap(ROUND);
+    currentColorLayer.strokeJoin(ROUND);
+    currentColorLayer.stroke(brush.fillColor);
+    currentColorLayer.strokeWeight(brush.size);
+    drawSymmetricLines(currentColorLayer, x1, y1, x2, y2);
 }
 
 function drawSymmetricLines(layer, x1, y1, x2, y2) {
@@ -81,8 +148,24 @@ function drawSymmetricLines(layer, x1, y1, x2, y2) {
 }
 
 function keyPressed() {
+    if (key === "1") {
+        currentBrushArray = arrayofbrushsA;
+    } else if (key === "2") {
+        currentBrushArray = arrayofbrushsB;
+    } else if (key === "3") {
+        currentBrushArray = arrayofbrushsC;
+    }
+
     if (keyCode === 32) {
-        currentBrush = (currentBrush + 1) % arrayofbrushs.length;
+        currentBrush = (currentBrush + 1) % currentBrushArray.length;
+        createOutlineLayer();
+        return false;
+    }
+
+    if (key === "0") {
+        outlineLayers = [];
+        colorLayers = [];
+        createOutlineLayer();
         return false;
     }
 }

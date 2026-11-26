@@ -5,6 +5,8 @@ This website's purpose is simple and linked to the projects of CART253. First, i
 
 [Somewhere Beyond banner](./images/Portenoiretblanc1.jpg) 
 
+[The Final Project: Brush your Mind Away](./final_project/index.html)
+
 [Prototype 1: Landscape](./prototype_assignments/prototype1landscape/index.html)
 
 [Prototype 2.1: As concrete as abstract gets](./prototype_assignments/prototype2.1/index.html)
@@ -52,6 +54,8 @@ This website's purpose is simple and linked to the projects of CART253. First, i
 [Challenge 4: Bouncy Ball Ball Bonanza](./challenges/functions_challenge)
 
 [Challenge 5: Lines (Loops challenge)](./challenges/loops_challenge)
+
+
 
 
 
